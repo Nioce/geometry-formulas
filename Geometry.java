@@ -14,10 +14,43 @@ public class Geometry
         
         return area;
     }
+    public static double areaparallelorgram(double base, double height)
+    {
+        double area = base * height;
+        return area;
+    }
     
+    public static double areatrapezoid(double base1, double base2, double height)
+    {
+        double area = base1 + base2;
+        double bee = area / 2.0;
+        double ekk = bee * height;
+        return ekk;
+    }
+    
+    public static double volime0right0cone(double radius, double height)
+    {
+        double volume1 = height / 3.0;
+        double volume2 = Math.PI * Math.pow(radius, 3);
+        double volume = volume1 * volume2;
+        return volume;
+    }
+    
+    public static double volumerectprism(double width, double height, double length)
+    {
+        double volumne = width * height * length;
+        return volumne;
+    }
+
     public static double rectangleArea(double length, double width) 
     {
         return length * width;
+    }
+    
+    public static double area0right0rectangular0prism(double width, double length, double height)
+    {
+        double area = 2 * ((width * length) + (height * length) + (height * width));
+        return area;
     }
     
     public static double sphereVolume(double radius) 
