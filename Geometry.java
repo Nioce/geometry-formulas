@@ -14,6 +14,7 @@ public class Geometry
         
         return area;
     }
+    
     public static double areaparallelorgram(double base, double height)
     {
         double area = base * height;
@@ -28,7 +29,7 @@ public class Geometry
         return ekk;
     }
     
-    public static double volime0right0cone(double radius, double height)
+    public static double volume0cone(double radius, double height)
     {
         double volume1 = height / 3.0;
         double volume2 = Math.PI * Math.pow(radius, 3);
@@ -58,6 +59,32 @@ public class Geometry
         return 4.0 / 3.0 * Math.PI * Math.pow(radius, 3);
     }
     
+    public static double hypotenuse0of0a0right0triangle(double leg1, double leg2)
+    {
+        double hypot = Math.pow(leg1, 3) + Math.pow(leg2, 3);
+        return hypot;
+    }
+    
+    public static double distanc0Points(double x1, double x2, double y1, double y2)
+    {
+        double root1 = Math.sqrt(Math.pow((x2-x1),2)+(Math.pow((y2-y1),2)));
+        return root1;
+    }
+    
+    public static double slope0Between0Two0Points(double x1, double x2, double y1, double y2)
+    {
+        double distance = ((y2 - y1) / (x2 - x1));
+        return distance;
+    }
+    
+    public static double AreaOfATriangle(double a, double b, double c)
+    {
+        double area1 = 2.0 * (Math.pow((a * b), 2.0)) - (Math.pow(a, 4.0));
+        double area2 = 2.0 *(Math.pow((a*c),2.0)) - (Math.pow(b,4.0));
+        double area3 = 2.0 * (Math.pow((b*c),2.0)) - (Math.pow(c,4.0));
+        double area = (1.0/4.0) * Math.sqrt(area1 + area2 + area3);
+        return area;
+    }
     public static void main(String[] args) 
     {
         double ta1 = triangleArea(4.2, 8.1);
