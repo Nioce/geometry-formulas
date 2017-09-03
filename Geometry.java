@@ -21,6 +21,7 @@ public class Geometry
         
         return area;
     }
+    
      /**
      * Finds area of a parallegoram  
      * 
@@ -34,6 +35,7 @@ public class Geometry
         double area = base * height;
         return area;
     }
+    
     /**
      * Finds area of a trapezoid  
      * 
@@ -50,6 +52,7 @@ public class Geometry
         double ekk = bee * height;
         return ekk;
     }
+    
      /**
      * Finds volume of a Cone  
      * 
@@ -65,6 +68,7 @@ public class Geometry
         double volume = volume1 * volume2;
         return volume;
     }
+    
     /**
      * Finds volume of a Rectangular Prism  
      * 
@@ -79,6 +83,7 @@ public class Geometry
         double volumne = width * height * length;
         return volumne;
     }
+    
     /**
      * Finds area rectangle   
      * 
@@ -91,6 +96,7 @@ public class Geometry
     {
         return length * width;
     }
+    
     /**
      * Finds area rectangler prism 
      * 
@@ -104,6 +110,7 @@ public class Geometry
         double area = 2 * ((width * length) + (height * length) + (height * width));
         return area;
     }
+    
     /**
      * Finds volume sphere
      * 
@@ -115,6 +122,7 @@ public class Geometry
     {
         return 4.0 / 3.0 * Math.PI * Math.pow(radius, 3);
     }
+    
     /**
      * Finds hypotenuse right triangle 
      * 
@@ -129,18 +137,49 @@ public class Geometry
         return hypot;
     }
     
+    /**
+     * Finds distance  between two points
+     * 
+     * @parm x1 - Cordinate of x first point
+     * @parm y1 - Cordinate of y first point 
+     * 
+     * @parm x2 - Cordinate of x second point
+     * @parm y2 - Cordinate of y second point 
+     * 
+     * @return root1 aka the distance between the two points  
+     */        
     public static double distanc0Points(double x1, double x2, double y1, double y2)
     {
         double root1 = Math.sqrt(Math.pow((x2-x1),2)+(Math.pow((y2-y1),2)));
         return root1;
     }
     
+    /**
+     * Finds slope between the two points
+     * 
+     * @parm x1 - Cordinate of x first point
+     * @parm y1 - Cordinate of y first point 
+     * 
+     * @parm x2 - Cordinate of x second point
+     * @parm y2 - Cordinate of y second point 
+     * 
+     * @return distance between the two points  
+     */      
     public static double slope0Between0Two0Points(double x1, double x2, double y1, double y2)
     {
         double distance = ((y2 - y1) / (x2 - x1));
         return distance;
     }
-    
+  
+    /**
+     * Finds the area of a triangle without the height
+     * 
+     * @parm a - Side a of the triangle 
+     * @parm b - Side b of the triangle
+     * @parm c - Side c of the triangle 
+     * 
+     * @return area - Returns the area of the traingle.
+     */
     public static double AreaOfATriangle(double a, double b, double c)
     {
         double area1 = 2.0 * (Math.pow((a * b), 2.0)) - (Math.pow(a, 4.0));
@@ -149,6 +188,10 @@ public class Geometry
         double area = (1.0/4.0) * Math.sqrt(area1 + area2 + area3);
         return area;
     }
+    /**
+     * This was made to test functions above
+     * @parm function
+     */
     public static void main(String[] args) 
     {
         double ta1 = triangleArea(4.2, 8.1);
